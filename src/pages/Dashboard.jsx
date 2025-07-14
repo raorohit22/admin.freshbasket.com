@@ -31,16 +31,17 @@ import PageTitle from "@/components/Typography/PageTitle";
 import { SidebarContext } from "@/context/SidebarContext";
 import OrderServices from "@/services/OrderServices";
 import AnimatedContent from "@/components/common/AnimatedContent";
+import { useNotificationContext } from "@/context/NotificationContext";
 
 const Dashboard = () => {
   const { t } = useTranslation();
   const { mode } = useContext(WindmillContext);
+  const { currentPage, handleChangePage, setIsUpdate } = useContext(SidebarContext);
+  const { notifications } = useNotificationContext();
 
   dayjs.extend(isBetween);
   dayjs.extend(isToday);
   dayjs.extend(isYesterday);
-
-  const { currentPage, handleChangePage } = useContext(SidebarContext);
 
   // react hook
   const [todayOrderAmount, setTodayOrderAmount] = useState(0);
@@ -234,6 +235,17 @@ const Dashboard = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dashboardOrderAmount]);
+
+  // Listen for new order notifications and refresh dashboard
+  useEffect(() => {
+    if (!notifications || notifications.length === 0) return;
+    const latest = notifications[0];
+    // If the latest notification is for a new order and is unread, refresh dashboard
+    if (latest && latest.orderId && latest.status === "unread") {
+      setIsUpdate(true);
+    }
+    // eslint-disable-next-line
+  }, [notifications]);
 
   return (
     <>
