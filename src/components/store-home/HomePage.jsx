@@ -1135,7 +1135,7 @@ const HomePage = ({
                     label="Button Link "
                     name="promotion_button_link"
                     type="text"
-                    placeholder="https://kachabazar-store.vercel.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
+                    placeholder="https://freshbaskett.netlify.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
                   />
                   <Error errorName={errors.promotion_button_link} />
                 </div>
@@ -1425,7 +1425,7 @@ const HomePage = ({
                     label="Button Link"
                     name="quick_delivery_link"
                     type="text"
-                    placeholder="https://kachabazar-store.vercel.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
+                    placeholder="https://freshbaskett.netlify.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
                   />
                   <Error errorName={errors.quick_delivery_link} />
                 </div>
@@ -1647,7 +1647,7 @@ const HomePage = ({
                     label="Button Link "
                     name="daily_need_app_link"
                     type="text"
-                    placeholder="https://kachabazar-store.vercel.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
+                    placeholder="https://freshbaskett.netlify.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
                   />
                   <Error errorName={errors.daily_need_app_link} />
                 </div>
@@ -1675,7 +1675,7 @@ const HomePage = ({
                     label="Button Link "
                     name="daily_need_google_link"
                     type="text"
-                    placeholder="https://kachabazar-store.vercel.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
+                    placeholder="https://freshbaskett.netlify.app/search?category=fruits-vegetable&_id=632aca2b4d87ff2494210be8"
                   />
                   <Error errorName={errors.daily_need_google_link} />
                 </div>

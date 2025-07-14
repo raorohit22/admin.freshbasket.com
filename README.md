@@ -1,4 +1,4 @@
-# 🛍️ Kachabazar Admin Dashboard
+# 🛍️ Freshbasket Admin Dashboard
 
 **A comprehensive, modern e-commerce admin dashboard built with React.js, Tailwind CSS, and Vite**
 
@@ -24,7 +24,7 @@
 
 ## 🎯 Overview
 
-**Kachabazar Admin Dashboard** is a feature-rich, modern e-commerce administration panel designed to provide comprehensive management capabilities for online stores. Built with cutting-edge technologies, it offers an intuitive interface for managing products, orders, customers, and store operations.
+**Freshbasket Admin Dashboard** is a feature-rich, modern e-commerce administration panel designed to provide comprehensive management capabilities for online stores. Built with cutting-edge technologies, it offers an intuitive interface for managing products, orders, customers, and store operations.
 
 ### 🎯 **Project Goals**
 - Provide a complete e-commerce management solution
@@ -308,7 +308,7 @@
 ## 📁 Project Structure
 
 ```
-kachabazar-admin/
+freshbasket-admin/
 ├── 📁 public/                    # Static assets
 │   ├── favicon.ico              # Site favicon
 │   ├── logo-*.png               # App logos
@@ -519,11 +519,9 @@ Before you begin, ensure you have the following installed:
 #### **1. Clone the Repository**
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/kachabazar-admin.git
 
 # Navigate to the project directory
-cd kachabazar-admin
+cd freshbasket-admin
 ```
 
 #### **2. Install Dependencies**
@@ -558,7 +556,7 @@ VITE_CLOUDINARY_API_KEY=your_cloudinary_api_key
 VITE_CLOUDINARY_API_SECRET=your_cloudinary_secret
 
 # Application Configuration
-VITE_APP_NAME=Kachabazar Admin
+VITE_APP_NAME=Freshbasket Admin
 VITE_APP_VERSION=1.0.0
 VITE_APP_ENV=development
 
@@ -602,7 +600,7 @@ The application will be available at `http://localhost:4100`
 | `VITE_API_URL` | Backend API URL | `http://localhost:8000/api` | Yes |
 | `VITE_CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name | - | Yes |
 | `VITE_CLOUDINARY_API_KEY` | Cloudinary API key | - | Yes |
-| `VITE_APP_NAME` | Application name | `Kachabazar Admin` | No |
+| `VITE_APP_NAME` | Application name | `Freshbasket Admin` | No |
 | `VITE_ENABLE_PWA` | Enable PWA features | `true` | No |
 | `VITE_ENABLE_ANALYTICS` | Enable analytics | `true` | No |
 
@@ -664,7 +662,7 @@ export default defineConfig({
 
 ## 📄 File Management
 
-Kachabazar Admin Dashboard provides robust file and media management features to streamline your e-commerce operations:
+Freshbasket Admin Dashboard provides robust file and media management features to streamline your e-commerce operations:
 
 - **Product Image Uploads**: Upload multiple images per product with drag-and-drop support and real-time previews.
 - **Cloudinary Integration**: All images and media are stored and optimized via Cloudinary, ensuring fast delivery and automatic resizing.
@@ -677,7 +675,7 @@ Kachabazar Admin Dashboard provides robust file and media management features to
 
 ## 🎯 Customization
 
-Kachabazar Admin is designed to be highly customizable to fit your brand and business needs:
+Freshbasket Admin is designed to be highly customizable to fit your brand and business needs:
 
 - **Theme Customization**: Easily switch between light and dark modes. Modify color schemes and branding via `src/assets/theme/myTheme.js`.
 - **Layout Options**: Modular layout components allow you to rearrange dashboard sections, sidebar, and header.
@@ -716,5 +714,5 @@ Special thanks to all contributors and the open-source community for their suppo
 ---
 
 If you have any questions, suggestions, or feedback, feel free to open an issue or contact the author.  
-Thank you for using and supporting Kachabazar Admin Dashboard!
+Thank you for using and supporting Freshbasket Admin Dashboard!
 # admin.freshbasket.com

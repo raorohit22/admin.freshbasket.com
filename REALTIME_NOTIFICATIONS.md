@@ -1,6 +1,6 @@
 # Real-Time Notifications Implementation
 
-This document explains the real-time notification system implemented in the Kachabazar Admin Dashboard.
+This document explains the real-time notification system implemented in the Freshbasket Admin Dashboard.
 
 ## Overview
 

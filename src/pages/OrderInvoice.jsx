@@ -114,9 +114,9 @@ const OrderInvoice = () => {
               <div className="lg:text-right text-left">
                 <h2 className="lg:flex lg:justify-end text-lg font-serif font-semibold mt-4 lg:mt-0 lg:ml-0 md:mt-0">
                   {mode === "dark" ? (
-                    <img src={logoDark} alt="kachabazar" width="110" />
+                    <img src={logoDark} alt="freshbasket" width="110" />
                   ) : (
-                    <img src={logoLight} alt="kachabazar" width="110" />
+                    <img src={logoLight} alt="freshbasket" width="110" />
                   )}
                 </h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
