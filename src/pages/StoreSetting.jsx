@@ -279,7 +279,7 @@ const StoreSetting = () => {
                 </div>
 
                 {/* Github key section start*/}
-                <div className="grid md:grid-cols-5 items-center sm:grid-cols-12 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                {/* <div className="grid md:grid-cols-5 items-center sm:grid-cols-12 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
                   <Label label="Enable Github Login" />
                   <div className="sm:col-span-4">
                     <SwitchToggle
@@ -326,11 +326,11 @@ const StoreSetting = () => {
                       <Error errorName={errors.github_secret} />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* Github key section end*/}
 
                 {/* Facebook key section start*/}
-                <div className="grid md:grid-cols-5 items-center sm:grid-cols-12 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                {/* <div className="grid md:grid-cols-5 items-center sm:grid-cols-12 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
                   <Label label="Enable Facebook Login" />
                   <div className="sm:col-span-4">
                     <SwitchToggle
@@ -377,7 +377,7 @@ const StoreSetting = () => {
                       <Error errorName={errors.facebook_secret} />
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Facebook key section end*/}
 
@@ -464,7 +464,7 @@ const StoreSetting = () => {
                 {/* FB Pixel  section end */}
 
                 {/* EnableTawkChat  section start */}
-                <div className="grid md:grid-cols-5 items-center sm:grid-cols-12 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                {/* <div className="grid md:grid-cols-5 items-center sm:grid-cols-12 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
                   <Label label={t("EnableTawkChat")} />
                   <div className="sm:col-span-4">
                     <SwitchToggle
@@ -511,7 +511,7 @@ const StoreSetting = () => {
                       <Error errorName={errors.tawk_chat_widget_id} />
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* EnableTawkChat  section end */}
               </div>
