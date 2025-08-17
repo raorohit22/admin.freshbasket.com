@@ -4,14 +4,14 @@ const myTheme = {
     base: "p-4 pl-12 relative rounded-lg leading-5",
     withClose: "pr-12",
     success:
-      "bg-emerald-50 text-emerald-900 dark:bg-emerald-600 dark:text-white",
+      "bg-blue-50 text-blue-900 dark:bg-blue-600 dark:text-white",
     danger: "bg-red-50 text-red-900 dark:bg-red-600 dark:text-white",
     warning: "bg-yellow-50 text-yellow-900 dark:bg-yellow-600 dark:text-white",
     neutral: "bg-gray-50 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
     info: "bg-blue-50 text-blue-900 dark:bg-blue-600 dark:text-white",
     icon: {
       base: "h-5 w-5",
-      success: "text-emerald-400 dark:text-emerald-300",
+      success: "text-blue-400 dark:text-blue-300",
       danger: "text-red-400 dark:text-red-300",
       warning: "text-yellow-400 dark:text-yellow-100",
       neutral: "text-gray-400 dark:text-gray-500",
@@ -89,7 +89,7 @@ const myTheme = {
   badge: {
     base: "inline-flex px-2 text-xs font-medium leading-5 rounded-full",
     success:
-      "text-emerald-600 bg-emerald-100 dark:bg-emerald-800 dark:text-emerald-100",
+      "text-blue-600 bg-blue-100 dark:bg-blue-800 dark:text-blue-100",
     danger: "text-red-500 bg-red-100 dark:text-red-100 dark:bg-red-800",
     warning: "text-yellow-600 bg-yellow-100 dark:text-white dark:bg-yellow-600",
     neutral: "text-gray-500 bg-gray-100 dark:text-gray-100 dark:bg-gray-800",
@@ -106,7 +106,7 @@ const myTheme = {
       "border border-gray-200 dark:border-gray-600 dark:focus:border-gray-600 dark:bg-gray-700",
     disabled: "cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800",
     valid:
-      "border-emerald-600 dark:bg-gray-700 focus:border-emerald-400 dark:focus:border-emerald-400",
+      "border-blue-600 dark:bg-gray-700 focus:border-blue-400 dark:focus:border-blue-400",
     invalid:
       "border-red-600 dark:bg-gray-700 focus:border-red-400 dark:focus:border-red-400",
   },
@@ -118,7 +118,7 @@ const myTheme = {
     select: "leading-5",
     disabled: "cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800",
     valid:
-      "border-emerald-600 dark:bg-gray-700 focus:border-emerald-400 dark:focus:border-emerald-400",
+      "border-blue-600 dark:bg-gray-700 focus:border-blue-400 dark:focus:border-blue-400",
     invalid:
       "border-red-600 dark:bg-gray-700 focus:border-red-400 dark:focus:border-red-400",
   },
@@ -137,18 +137,18 @@ const myTheme = {
     disabled:
       "border border-gray-400 cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800",
     valid:
-      "border-emerald-600 dark:bg-gray-700 focus:border-emerald-400 dark:focus:border-emerald-400",
+      "border-blue-600 dark:bg-gray-700 focus:border-blue-400 dark:focus:border-blue-400",
     invalid:
       "border-red-600 dark:bg-gray-700 focus:border-red-400 dark:focus:border-red-400",
     radio:
-      "text-emerald-600 form-radio focus:border-emerald-400 focus:outline-none",
+      "text-blue-600 form-radio focus:border-blue-400 focus:outline-none",
     checkbox:
-      "text-emerald-600 form-checkbox focus:border-emerald-500 focus:outline-none rounded",
+      "text-blue-600 form-checkbox focus:border-blue-500 focus:outline-none rounded",
   },
   // HelperText
   helperText: {
     base: "text-xs",
-    valid: "text-emerald-600 dark:text-emerald-400",
+    valid: "text-blue-600 dark:text-blue-400",
     invalid: "text-red-600 dark:text-red-400",
   },
   // Card
@@ -186,8 +186,8 @@ const myTheme = {
       right: "ml-2 -mr-1",
     },
     primary: {
-      base: "text-white bg-emerald-500 border border-transparent",
-      active: "active:bg-emerald-600 hover:bg-emerald-600",
+      base: "text-white bg-blue-500 border border-transparent",
+      active: "active:bg-blue-600 hover:bg-blue-600",
       disabled: "opacity-50 cursor-not-allowed",
     },
     modern: {

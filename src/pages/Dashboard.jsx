@@ -302,7 +302,7 @@ const Dashboard = () => {
             title2="AllTimeSales"
             Icon={ImCreditCard}
             price={dashboardOrderAmount?.totalAmount || 0}
-            className="text-white dark:text-emerald-100 bg-emerald-600"
+            className="text-white dark:text-blue-100 bg-blue-600"
             loading={loadingOrderAmount}
           />
         </div>
@@ -335,7 +335,7 @@ const Dashboard = () => {
             Icon={FiCheck}
             loading={loadingOrderCount}
             quantity={dashboardOrderCount?.totalDeliveredOrder || 0}
-            className="text-emerald-600 dark:text-emerald-100 bg-emerald-100 dark:bg-emerald-500"
+            className="text-blue-600 dark:text-blue-100 bg-blue-100 dark:bg-blue-500"
           />
         </div>
 

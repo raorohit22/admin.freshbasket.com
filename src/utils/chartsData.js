@@ -1,24 +1,24 @@
 export const doughnutLegends = [
-  { title: "Fresh Vegetable", color: "bg-emerald-500" },
+  { title: "Fresh Vegetable", color: "bg-blue-500" },
   { title: "Cooking Essentials", color: "bg-blue-500" },
   { title: "Drinks", color: "bg-orange-500" },
   { title: "Organic Food", color: "bg-indigo-500" },
 ];
 
 export const lineLegends = [
-  { title: "Organic", color: "bg-teal-600" },
+  { title: "Organic", color: "bg-blue-600" },
   { title: "Paid", color: "bg-purple-600" },
 ];
 
 export const barLegends = [
-  { title: "Fresh Vegetable", color: "bg-emerald-500" },
+  { title: "Fresh Vegetable", color: "bg-blue-500" },
   { title: "Cooking Essentials", color: "bg-blue-500" },
   { title: "Drinks", color: "bg-orange-500" },
   { title: "Organic Food", color: "bg-indigo-500" },
 ];
 
 export const pieLegends = [
-  { title: "Organic", color: "bg-teal-600" },
+  { title: "Organic", color: "bg-blue-600" },
   { title: "Paid", color: "bg-purple-600" },
 ];
 
@@ -31,7 +31,7 @@ export const doughnutOptions = {
          * These colors come from Tailwind CSS palette
          * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
          */
-        backgroundColor: ["#10B981", "#3B82F6", "#F97316", "#0EA5E9"],
+        backgroundColor: ["#3B82F6", "#3B82F6", "#F97316", "#0EA5E9"],
         label: "Dataset 1",
       },
     ],
@@ -56,8 +56,8 @@ export const lineOptions = {
          * These colors come from Tailwind CSS palette
          * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
          */
-        backgroundColor: "#0694a2",
-        borderColor: "#0694a2",
+        backgroundColor: "#2563eb",
+        borderColor: "#2563eb",
         data: [43, 48, 40, 54, 67, 73, 70],
         fill: false,
       },
@@ -112,7 +112,7 @@ export const barOptions = {
     datasets: [
       {
         label: "Fresh Vegetable",
-        backgroundColor: "#10B981",
+        backgroundColor: "#3B82F6",
         // borderColor: window.chartColors.red,
         borderWidth: 1,
         data: [15, 35, 45, 40, 70, 85, 90],

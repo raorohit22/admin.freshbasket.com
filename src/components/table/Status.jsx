@@ -16,7 +16,7 @@ const Status = ({ status }) => {
         )}
         {status === "Cancel" && <Badge type="danger">{status}</Badge>}
         {status === `POS-Completed` && (
-          <Badge className="dark:bg-teal-900 bg-teal-100">{status}</Badge>
+          <Badge className="dark:bg-blue-900 bg-blue-100">{status}</Badge>
         )}
       </span>
     </>

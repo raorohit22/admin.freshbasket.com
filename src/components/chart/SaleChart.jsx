@@ -6,7 +6,7 @@ const SaleChart = ({ salesReport }) => {
   const { getNumberTwo } = useUtilsFunction();
   const [activeButton, setActiveButton] = useState({
     title: "Sales",
-    color: "emerald",
+    color: "blue",
   });
 
   const handleClick = ({ title, color }) => {
@@ -21,8 +21,8 @@ const SaleChart = ({ salesReport }) => {
           ? {
               label: "Sales",
               data: salesReport?.map((or) => getNumberTwo(or.total)),
-              borderColor: "#10B981",
-              backgroundColor: "#10B981",
+              borderColor: "#3B82F6",
+              backgroundColor: "#3B82F6",
               borderWidth: 3,
               yAxisID: "y",
             }
@@ -50,11 +50,11 @@ const SaleChart = ({ salesReport }) => {
         <ul className="flex flex-wrap -mb-px">
           <li className="mr-2">
             <button
-              onClick={() => handleClick({ title: "Sales", color: "emerald" })}
+              onClick={() => handleClick({ title: "Sales", color: "blue" })}
               type="button"
               className={`inline-block p-2 rounded-t-lg border-b-2 border-transparent ${
                 activeButton.title === "Sales"
-                  ? "text-emerald-600 border-emerald-600 dark:text-emerald-500 dark:border-emerald-500"
+                  ? "text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500"
                   : "hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
               }  focus:outline-none`}
             >

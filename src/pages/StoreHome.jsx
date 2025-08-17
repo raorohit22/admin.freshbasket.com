@@ -274,11 +274,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=home-settings"}
-              className={`inline-block w-full px-4 py-3 shadow-md ${
-                tabName === "home-settings" || location.search === ""
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
-                  : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500 sm:rounded-l-md rounded-tl-md`}
+              className={`inline-block w-full px-4 py-3 shadow-md ${tabName === "home-settings" || location.search === ""
+                ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
+                : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
+                } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500 sm:rounded-l-md rounded-tl-md`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("HomeSettings")}
@@ -294,11 +293,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=single-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "single-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
-                  : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500`}
+              className={`inline-block w-full py-3 px-4 shadow-md ${tabName === "single-setting"
+                ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
+                : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
+                } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("SingleSetting")}
@@ -312,11 +310,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=about-us-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "about-us-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
-                  : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500 focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500 sm:rounded-tr-none rounded-tr-md`}
+              className={`inline-block w-full py-3 px-4 shadow-md ${tabName === "about-us-setting"
+                ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
+                : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
+                } hover:text-white hover:bg-blue-500 focus:outline-none dark:hover:text-white dark:hover:bg-blue-500 sm:rounded-tr-none rounded-tr-md`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("AboutUsSetting")}
@@ -330,11 +327,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=privacy-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "privacy-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "privacy-setting"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("PrivacyTCSetting")}
@@ -348,11 +344,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=FAQ-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "FAQ-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "FAQ-setting"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("FAQSetting")}
@@ -366,11 +361,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=offers-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "offers-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "offers-setting"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("OffersStting")}
@@ -384,11 +378,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=contact-us-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "contact-us-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "contact-us-setting"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500 sm:rounded-bl-none rounded-bl-md`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500 sm:rounded-bl-none rounded-bl-md`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("ContactUsStting")}
@@ -401,11 +394,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=checkout-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "checkout-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "checkout-setting"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500 sm:rounded-bl-none rounded-bl-md`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500 sm:rounded-bl-none rounded-bl-md`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("Checkout")}
@@ -418,11 +410,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=dashboard-setting"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "dashboard-setting"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "dashboard-setting"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500 sm:rounded-bl-none rounded-bl-md`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500 sm:rounded-bl-none rounded-bl-md`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("DashboardSetting")}
@@ -435,11 +426,10 @@ const StoreHome = () => {
           <li>
             <Link
               to={"/store/customization?storeTab=seo-settings"}
-              className={`inline-block w-full py-3 px-4 shadow-md ${
-                tabName === "seo-settings"
-                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+              className={`inline-block w-full py-3 px-4 shadow-md ${                tabName === "seo-settings"
+                  ? "bg-blue-500 text-white dark:bg-blue-500 dark:text-white"
                   : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
-              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500`}
+              } hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:hover:bg-blue-500`}
             >
               <span className="text-sm font-medium font-serif xl:inline-block hidden">
                 {t("SeoSetting")}

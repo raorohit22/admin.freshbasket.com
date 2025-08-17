@@ -11,7 +11,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=home-settings"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500 rounded-l-md`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500 rounded-l-md`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("HomeSettings")}
@@ -25,7 +25,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=single-setting"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("SingleSetting")}
@@ -39,7 +39,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=about-us-setting"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("AboutUsSetting")}
@@ -53,7 +53,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=privacy-setting"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("PrivacyTCSetting")}
@@ -67,7 +67,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=FAQ-setting"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("FAQSetting")}
@@ -81,7 +81,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=offers-setting"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("OffersStting")}
@@ -95,7 +95,7 @@ const StoreTabList = () => {
         <li>
           <Link
             to={"/store/customization?storeTab=contact-us-setting"}
-            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-emerald-500`}
+            className={`inline-block w-full p-4 shadow bg-white hover:text-white hover:bg-blue-500  focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-blue-500`}
           >
             <span className="text-sm font-medium font-serif xl:inline-block hidden">
               {t("ContactUsStting")}

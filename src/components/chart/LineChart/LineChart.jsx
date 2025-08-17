@@ -19,7 +19,7 @@ const LineChart = ({ salesReport }) => {
 
   const [activeButton, setActiveButton] = useState({
     title: "Sales",
-    color: "emerald",
+    color: "blue",
   });
 
   const handleClick = ({ title, color }) => {
@@ -34,25 +34,25 @@ const LineChart = ({ salesReport }) => {
       datasets: [
         activeButton.title === "Sales"
           ? {
-              label: "Sales",
-              data: updatedSalesReport
-                ?.sort((a, b) => new Date(a.date) - new Date(b.date))
-                ?.map((or) => or.total),
-              borderColor: "#10B981",
-              backgroundColor: "#10B981",
-              borderWidth: 3,
-              yAxisID: "y",
-            }
+            label: "Sales",
+            data: updatedSalesReport
+              ?.sort((a, b) => new Date(a.date) - new Date(b.date))
+              ?.map((or) => or.total),
+            borderColor: "#3B82F6",
+            backgroundColor: "#3B82F6",
+            borderWidth: 3,
+            yAxisID: "y",
+          }
           : {
-              label: "Order",
-              data: updatedSalesReport
-                ?.sort((a, b) => new Date(a.date) - new Date(b.date))
-                ?.map((or) => or.order),
-              borderColor: "#F97316",
-              backgroundColor: "#F97316",
-              borderWidth: 3,
-              yAxisID: "y",
-            },
+            label: "Order",
+            data: updatedSalesReport
+              ?.sort((a, b) => new Date(a.date) - new Date(b.date))
+              ?.map((or) => or.order),
+            borderColor: "#F97316",
+            backgroundColor: "#F97316",
+            borderWidth: 3,
+            yAxisID: "y",
+          },
       ],
     },
     options: {
@@ -71,13 +71,12 @@ const LineChart = ({ salesReport }) => {
         <ul className="flex flex-wrap -mb-px">
           <li className="mr-2">
             <button
-              onClick={() => handleClick({ title: "Sales", color: "emerald" })}
+              onClick={() => handleClick({ title: "Sales", color: "blue" })}
               type="button"
-              className={`inline-block p-2 rounded-t-lg border-b-2 border-transparent ${
-                activeButton.title === "Sales"
-                  ? "text-emerald-600 border-emerald-600 dark:text-emerald-500 dark:border-emerald-500"
+              className={`inline-block p-2 rounded-t-lg border-b-2 border-transparent ${activeButton.title === "Sales"
+                  ? "text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500"
                   : "hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              }  focus:outline-none`}
+                }  focus:outline-none`}
             >
               {t("Sales")}
             </button>
@@ -87,11 +86,10 @@ const LineChart = ({ salesReport }) => {
             <button
               onClick={() => handleClick({ title: "Orders", color: "red" })}
               type="button"
-              className={`inline-block p-2 rounded-t-lg border-b-2 border-transparent ${
-                activeButton.title === "Orders"
+              className={`inline-block p-2 rounded-t-lg border-b-2 border-transparent ${activeButton.title === "Orders"
                   ? "text-orange-500 border-orange-500 dark:text-orange-500 dark:border-orange-500"
                   : "hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              }  focus:outline-none`}
+                }  focus:outline-none`}
             >
               {t("Orders")}
             </button>

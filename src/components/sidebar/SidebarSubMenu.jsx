@@ -12,84 +12,72 @@ const SidebarSubMenu = ({ route }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <li className="relative px-6 py-3" key={route.name}>
-        <button
-          className="inline-flex items-center justify-between focus:outline-none w-full text-sm font-semibold transition-colors duration-150 hover:text-emerald-600 dark:hover:text-gray-200"
-          onClick={() => setOpen(!open)}
-          aria-haspopup="true"
-        >
-          <span className="inline-flex items-center">
-            <route.icon className="w-5 h-5" aria-hidden="true" />
-            <span className="ml-4 mt-1">{t(`${route.name}`)}</span>
-            <span className="pl-4 mt-1">
-              {open ? <IoChevronDownOutline /> : <IoChevronForwardOutline />}
-            </span>
-          </span>
-          {/* <DropdownIcon className="w-4 h-4" aria-hidden="true" /> */}
-        </button>
-        {open && (
-          <ul
-            className="p-2  overflow-hidden text-sm font-medium text-gray-500 rounded-md dark:text-gray-400 dark:bg-gray-900"
-            aria-label="submenu"
-          >
-            {route.routes.map((child, i) => (
-              <li key={i + 1}>
-                {child?.outside ? (
-                  <a
-                    href={import.meta.env.VITE_APP_STORE_DOMAIN}
-                    target="_blank"
-                    className="flex items-center font-serif py-1 text-sm text-gray-600 hover:text-emerald-600 cursor-pointer"
-                    // activeStyle={{
-                    //   color: "#0d9e6d",
-                    // }}
-                    rel="noreferrer"
-                  >
-                    <Route path={child.path} exact={child.exact}>
-                      <span
-                        className="absolute inset-y-0 left-0 w-1 bg-emerald-500 rounded-tr-lg rounded-br-lg"
-                        aria-hidden="true"
-                      ></span>
-                    </Route>
-                    {/* <route.icon className="w-5 h-5" aria-hidden="true" /> */}
-                    <span className="text-xs text-gray-500 pr-1">
-                      <IoRemoveSharp />
-                    </span>
-                    <span className="text-gray-500 hover:text-emerald-600 dark:hover:text-gray-200">
-                      {t(`${child.name}`)}
-                    </span>
-                    {/* <span className="ml-4">{route.name}</span> */}
-                  </a>
-                ) : (
-                  <NavLink
-                    to={child.path}
-                    // target={`${child.name === 'Sell' ? '_blank' : '_self'}`}
-                    className="flex items-center font-serif py-1 text-sm text-gray-600 hover:text-emerald-600 cursor-pointer"
-                    // activeStyle={{
-                    //   color: "#0d9e6d",
-                    // }}
-                    rel="noreferrer"
-                  >
-                    <Route path={child.path} exact={route.exact}>
-                      <span
-                        className="absolute inset-y-0 left-0 w-1 bg-emerald-600 rounded-tr-lg rounded-br-lg"
-                        aria-hidden="true"
-                      ></span>
-                    </Route>
-                    <span className="text-xs text-gray-500 pr-1">
-                      <IoRemoveSharp />
-                    </span>
-                    <span className="text-gray-500 hover:text-emerald-600 dark:hover:text-gray-200">
-                      {t(`${child.name}`)}
-                    </span>
-                  </NavLink>
-                )}
-              </li>
-            ))}
-          </ul>
-        )}
-      </li>
-    </>
+    <li className="relative sidebar-item" key={route.name}>
+      {/* Main Menu Button */}
+      <button
+        className="group flex items-center justify-between w-full px-3 py-3 text-sm font-medium text-gray-600 dark:text-gray-300 rounded-lg transition-all duration-200 hover:bg-blue-50 hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        onClick={() => setOpen(!open)}
+        aria-haspopup="true"
+        aria-expanded={open}
+      >
+        <span className="flex items-center">
+          <route.icon className="w-5 h-5 mr-3 transition-colors duration-200 group-hover:text-blue-600" aria-hidden="true" />
+          <span className="font-medium">{t(`${route.name}`)}</span>
+        </span>
+        <span className="transition-transform duration-200 ease-in-out">
+          {open ? (
+            <IoChevronDownOutline className="w-4 h-4 text-gray-400 group-hover:text-blue-600" />
+          ) : (
+            <IoChevronForwardOutline className="w-4 h-4 text-gray-400 group-hover:text-blue-600" />
+          )}
+        </span>
+      </button>
+
+      {/* Submenu */}
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+      >
+        <ul className="ml-6 mt-2 space-y-1 border-l-2 border-gray-200 dark:border-gray-600 pl-4">
+          {route.routes.map((child, i) => (
+            <li key={i + 1} className="relative sidebar-item">
+              {child?.outside ? (
+                <a
+                  href={import.meta.env.VITE_APP_STORE_DOMAIN}
+                  target="_blank"
+                  className="group flex items-center px-3 py-2 text-sm text-gray-500 dark:text-gray-400 rounded-md transition-all duration-200 hover:bg-gray-100 hover:text-blue-600 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer"
+                  rel="noreferrer"
+                >
+                  <Route path={child.path} exact={child.exact}>
+                    <span
+                      className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-6 bg-blue-500 rounded-r-full transition-all duration-200"
+                      aria-hidden="true"
+                    ></span>
+                  </Route>
+                  <IoRemoveSharp className="w-3 h-3 mr-2 text-gray-400 group-hover:text-blue-600 transition-colors duration-200" />
+                  <span className="font-medium">{t(`${child.name}`)}</span>
+                </a>
+              ) : (
+                <NavLink
+                  to={child.path}
+                  className="group flex items-center px-3 py-2 text-sm text-gray-500 dark:text-gray-400 rounded-md transition-all duration-200 hover:bg-gray-100 hover:text-blue-600 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer"
+                  rel="noreferrer"
+                >
+                  <Route path={child.path} exact={route.exact}>
+                    <span
+                      className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-6 bg-blue-500 rounded-r-full transition-all duration-200"
+                      aria-hidden="true"
+                    ></span>
+                  </Route>
+                  <IoRemoveSharp className="w-3 h-3 mr-2 text-gray-400 group-hover:text-blue-600 transition-colors duration-200" />
+                  <span className="font-medium">{t(`${child.name}`)}</span>
+                </NavLink>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </li>
   );
 };
 
