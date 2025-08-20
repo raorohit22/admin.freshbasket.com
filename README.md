@@ -2,8 +2,11 @@
 
 **A comprehensive, modern e-commerce admin dashboard built with React.js, Tailwind CSS, and Vite**
 
+## Live Demo
 
----
+- [Admin Panel](https://admin-freshbasket.netlify.app/)
+- [Frontend Store](https://freshbaskett.netlify.app/)
+
 
 ## 📋 Table of Contents
 
@@ -27,6 +30,7 @@
 **Freshbasket Admin Dashboard** is a feature-rich, modern e-commerce administration panel designed to provide comprehensive management capabilities for online stores. Built with cutting-edge technologies, it offers an intuitive interface for managing products, orders, customers, and store operations.
 
 ### 🎯 **Project Goals**
+
 - Provide a complete e-commerce management solution
 - Offer intuitive and responsive user interface
 - Support multi-language and multi-currency operations
@@ -34,6 +38,7 @@
 - Maintain security and data integrity
 
 ### 🎯 **Target Users**
+
 - E-commerce store administrators
 - Online business owners
 - Store managers and staff
@@ -44,9 +49,10 @@
 ## ✨ Key Features
 
 ### 📊 **Dashboard & Analytics**
+
 - **Real-time Analytics**: Live sales metrics, revenue tracking, and performance indicators
 - **Interactive Charts**: Revenue charts, order trends, customer behavior visualization
-- **Performance Metrics**: 
+- **Performance Metrics**:
   - Sales velocity and conversion rates
   - Customer acquisition costs
   - Inventory turnover rates
@@ -57,6 +63,7 @@
 ### 🛍️ **Catalog Management**
 
 #### **Product Management**
+
 - **Product CRUD Operations**: Complete product lifecycle management
 - **Advanced Product Features**:
   - Multiple product images with Cloudinary integration
@@ -71,6 +78,7 @@
 - **Product Categories**: Hierarchical category management
 
 #### **Category Management**
+
 - **Hierarchical Structure**: Parent-child category relationships
 - **Category Features**:
   - Category-specific attributes
@@ -80,6 +88,7 @@
 - **Category Analytics**: Performance tracking per category
 
 #### **Attribute Management**
+
 - **Custom Attributes**: Create product-specific attributes
 - **Attribute Types**: Text, number, select, multi-select, boolean
 - **Attribute Options**: Predefined values for select attributes
@@ -87,6 +96,7 @@
 - **Attribute Groups**: Organize attributes into logical groups
 
 #### **Coupon System**
+
 - **Coupon Types**: Percentage, fixed amount, free shipping
 - **Coupon Features**:
   - Usage limits and restrictions
@@ -97,6 +107,7 @@
 - **Coupon Analytics**: Usage tracking and performance metrics
 
 ### 👥 **Customer Management**
+
 - **Customer Database**: Comprehensive customer information storage
 - **Customer Features**:
   - Customer profiles with detailed information
@@ -111,6 +122,7 @@
   - Behavioral analytics
 
 ### 📦 **Order Management**
+
 - **Order Processing**: Complete order lifecycle management
 - **Order Features**:
   - Order status tracking (pending, processing, shipped, delivered)
@@ -118,13 +130,14 @@
   - Shipping information tracking
   - Order notes and comments
   - Order history and audit trail
-- **Invoice Generation**: 
+- **Invoice Generation**:
   - PDF invoice creation
   - Customizable invoice templates
   - Print and email capabilities
 - **Order Analytics**: Sales performance and order statistics
 
 ### 👨‍💼 **Staff Management**
+
 - **User Management**: Admin and staff account creation
 - **Role-based Access Control**:
   - Granular permission system
@@ -140,30 +153,35 @@
 ### ⚙️ **Settings & Configuration**
 
 #### **General Settings**
+
 - Store information and contact details
 - Business hours and policies
 - Tax configuration
 - Shipping settings
 
 #### **Store Settings**
+
 - E-commerce specific configurations
 - Payment gateway settings
 - Shipping method configuration
 - Email template customization
 
 #### **SEO Settings**
+
 - Meta tag management
 - Sitemap generation
 - Robots.txt configuration
 - Schema markup settings
 
 #### **Admin Settings**
+
 - System-level configurations
 - Backup and restore options
 - Log management
 - Performance settings
 
 ### 🌐 **Internationalization**
+
 - **Multi-language Support**: i18n integration with multiple languages
 - **Supported Languages**:
   - English (en)
@@ -179,20 +197,22 @@
 - **Translation Services**: Automated text translation capabilities
 
 ### 🏪 **Store Customization**
+
 - **Store Frontend**: Live store preview and management
-- **Homepage Customization**: 
+- **Homepage Customization**:
   - Landing page builder
   - Banner management
   - Featured products
   - Custom sections
 - **Store Settings**: Theme and appearance configuration
-- **Content Management**: 
+- **Content Management**:
   - About us page
   - Contact information
   - FAQ management
   - Privacy policy and terms
 
 ### 🔔 **Notification System**
+
 - **Real-time Notifications**: Live notification system
 - **Notification Types**:
   - Order alerts
@@ -207,6 +227,7 @@
 ## 🏗️ Architecture
 
 ### **Frontend Architecture**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Presentation Layer                       │
@@ -228,6 +249,7 @@
 ```
 
 ### **Component Architecture**
+
 - **Atomic Design**: Components organized by complexity
 - **Container/Presentational Pattern**: Separation of logic and presentation
 - **Custom Hooks**: Reusable business logic
@@ -239,11 +261,13 @@
 ## 🛠️ Technology Stack
 
 ### **Frontend Framework**
+
 - **React 18.2.0**: Latest React with concurrent features
 - **React Router 5.3.4**: Client-side routing
 - **React Hooks**: Functional component state management
 
 ### **Build Tools & Development**
+
 - **Vite 5.0.12**: Fast build tool and dev server
 - **Rollup**: Module bundling
 - **PostCSS**: CSS processing
@@ -251,47 +275,56 @@
 - **ESLint**: Code linting and formatting
 
 ### **Styling & UI**
+
 - **Tailwind CSS 3.4.3**: Utility-first CSS framework
 - **Headless UI**: Accessible UI components
 - **React Icons**: Comprehensive icon library
 - **React Transition Group**: Smooth animations
 
 ### **State Management**
+
 - **Redux Toolkit 1.9.7**: Modern Redux with RTK
 - **React Redux 8.1.0**: React bindings for Redux
 - **Redux Persist 6.0.0**: State persistence
 - **Redux Thunk 2.4.2**: Async action handling
 
 ### **Data Fetching & Caching**
+
 - **React Query 5.65.1**: Server state management
 - **Axios 1.4.0**: HTTP client
 - **Socket.io Client 4.7.2**: Real-time communication
 
 ### **Forms & Validation**
+
 - **React Hook Form 7.44.3**: Form handling
 - **Ajv 8.12.0**: JSON schema validation
 - **React Tag Input**: Tag management
 
 ### **File Management**
+
 - **Cloudinary**: Cloud image and video management
 - **React Dropzone 14.2.3**: File upload
 - **Browser Image Compression 2.0.2**: Image optimization
 - **Pica 9.0.1**: High-quality image resizing
 
 ### **Data Visualization**
+
 - **Chart.js 4.4.0**: Interactive charts
 - **React Chart.js 2 5.2.0**: React wrapper
 
 ### **Document Generation**
+
 - **React PDF Renderer 3.1.6**: PDF generation
 - **React to Print 2.14.13**: Print functionality
 
 ### **Internationalization**
+
 - **i18next 22.5.1**: Internationalization framework
 - **React i18next 12.3.1**: React bindings
 - **i18next Browser Language Detector 7.0.2**: Language detection
 
 ### **UI Components & Utilities**
+
 - **React Responsive Modal 6.4.1**: Modal dialogs
 - **React Toastify 9.1.3**: Toast notifications
 - **React Tooltip 5.28.0**: Tooltips
@@ -299,6 +332,7 @@
 - **React Spinners 0.13.8**: Loading spinners
 
 ### **Development & Testing**
+
 - **Vitest**: Unit testing framework
 - **jsdom**: DOM testing environment
 - **Cross-env**: Cross-platform environment variables
@@ -595,14 +629,14 @@ The application will be available at `http://localhost:4100`
 
 ### **Environment Variables**
 
-| Variable | Description | Default | Required |
-|----------|-------------|---------|----------|
-| `VITE_API_URL` | Backend API URL | `http://localhost:8000/api` | Yes |
-| `VITE_CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name | - | Yes |
-| `VITE_CLOUDINARY_API_KEY` | Cloudinary API key | - | Yes |
-| `VITE_APP_NAME` | Application name | `Freshbasket Admin` | No |
-| `VITE_ENABLE_PWA` | Enable PWA features | `true` | No |
-| `VITE_ENABLE_ANALYTICS` | Enable analytics | `true` | No |
+| Variable                     | Description           | Default                     | Required |
+| ---------------------------- | --------------------- | --------------------------- | -------- |
+| `VITE_API_URL`               | Backend API URL       | `http://localhost:8000/api` | Yes      |
+| `VITE_CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name | -                           | Yes      |
+| `VITE_CLOUDINARY_API_KEY`    | Cloudinary API key    | -                           | Yes      |
+| `VITE_APP_NAME`              | Application name      | `Freshbasket Admin`         | No       |
+| `VITE_ENABLE_PWA`            | Enable PWA features   | `true`                      | No       |
+| `VITE_ENABLE_ANALYTICS`      | Enable analytics      | `true`                      | No       |
 
 ### **Tailwind CSS Configuration**
 
@@ -611,21 +645,21 @@ The project uses a custom Tailwind configuration:
 ```javascript
 // tailwind.config.cjs
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          50: "#eff6ff",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-        },
-      },
-    },
-  },
-  plugins: [],
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	darkMode: "class",
+	theme: {
+		extend: {
+			colors: {
+				primary: {
+					50: "#eff6ff",
+					500: "#3b82f6",
+					600: "#2563eb",
+					700: "#1d4ed8",
+				},
+			},
+		},
+	},
+	plugins: [],
 };
 ```
 
@@ -638,23 +672,23 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    VitePWA({
-      registerType: "autoUpdate",
-      workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
-      },
-    }),
-  ],
-  server: {
-    port: 4100,
-    host: true,
-  },
-  build: {
-    outDir: "dist",
-    sourcemap: true,
-  },
+	plugins: [
+		react(),
+		VitePWA({
+			registerType: "autoUpdate",
+			workbox: {
+				globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+			},
+		}),
+	],
+	server: {
+		port: 4100,
+		host: true,
+	},
+	build: {
+		outDir: "dist",
+		sourcemap: true,
+	},
 });
 ```
 
@@ -715,4 +749,5 @@ Special thanks to all contributors and the open-source community for their suppo
 
 If you have any questions, suggestions, or feedback, feel free to open an issue or contact the author.  
 Thank you for using and supporting Freshbasket Admin Dashboard!
+
 # admin.freshbasket.com
