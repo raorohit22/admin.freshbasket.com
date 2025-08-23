@@ -22,4 +22,4 @@ function AccessibleNavigationAnnouncer() {
   )
 }
 
-export default AccessibleNavigationAnnouncer
+export default AccessibleNavigationAnnouncer;

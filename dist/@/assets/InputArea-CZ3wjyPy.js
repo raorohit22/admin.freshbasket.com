@@ -1,1 +1,0 @@
-import{j as r,e as u}from"./index-JntRuJ30.js";const m=({register:e,defaultValue:t,required:a,name:s,label:i,type:p,autoComplete:n,placeholder:o})=>r.jsx(r.Fragment,{children:r.jsx(u.Input,{...e(`${s}`,{required:a?`${i} is required!`:!1}),defaultValue:t,type:p,placeholder:o,name:s,autoComplete:n,className:"mr-2 h-12 p-2"})});export{m as I};

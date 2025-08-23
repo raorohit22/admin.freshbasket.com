@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { Avatar, TableBody, TableCell, TableRow } from "@windmill/react-ui";
 

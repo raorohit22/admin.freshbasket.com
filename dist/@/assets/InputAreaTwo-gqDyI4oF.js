@@ -1,1 +1,0 @@
-import{j as r,e as n}from"./index-JntRuJ30.js";const m=({register:e,defaultValue:t,required:o,name:s,label:a,type:p,placeholder:i})=>r.jsx(r.Fragment,{children:r.jsx(n.Input,{...e(`${s}`,{required:o?`${a} is required!`:!1}),defaultValue:t,type:p,placeholder:i,name:s,autoComplete:"new-password",className:"mr-2 p-2"})});export{m as I};
