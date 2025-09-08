@@ -14,7 +14,7 @@ const SettingServices = {
     return requests.put(`/setting/global/update`, body);
   },
 
-  // store setting all function
+  // store setting all function 
   addStoreSetting: async (body) => {
     return requests.post("/setting/store-setting/add", body);
   },
