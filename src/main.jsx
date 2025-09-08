@@ -21,39 +21,39 @@ import store from "@/reduxStore/store";
 import "@/i18n";
 
 const updateSW = registerSW({
-  onNeedRefresh() {
-    if (confirm("New content available. Reload?")) {
-      updateSW(true);
-    }
-  },
+	onNeedRefresh() {
+		if (confirm("New content available. Reload?")) {
+			updateSW(true);
+		}
+	},
 });
 const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: 1,
-      refetchOnWindowFocus: false,
-    },
-  },
+	defaultOptions: {
+		queries: {
+			retry: 1,
+			refetchOnWindowFocus: false,
+		},
+	},
 });
 
 let persistor = persistStore(store);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <QueryClientProvider client={queryClient}>
-    <AdminProvider>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <SidebarProvider>
-            <Suspense fallback={<ThemeSuspense />}>
-              <Windmill usePreferences theme={myTheme}>
-                <App />
-              </Windmill>
-            </Suspense>
-          </SidebarProvider>
-        </PersistGate>
-      </Provider>
-    </AdminProvider>
-  </QueryClientProvider>
+	<QueryClientProvider client={queryClient}>
+		<AdminProvider>
+			<Provider store={store}>
+				<PersistGate loading={null} persistor={persistor}>
+					<SidebarProvider>
+						<Suspense fallback={<ThemeSuspense />}>
+							<Windmill usePreferences theme={myTheme}>
+								<App />
+							</Windmill>
+						</Suspense>
+					</SidebarProvider>
+				</PersistGate>
+			</Provider>
+		</AdminProvider>
+	</QueryClientProvider>
 );
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

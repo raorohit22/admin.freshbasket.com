@@ -9,7 +9,6 @@ const useGetCData = () => {
   const location = useLocation();
   // const path = location?.pathname?.split("/")[1];
   const path = location?.pathname?.split("?")[0].split("/")[1];
-  //   console.log("location", location?.pathname?.split("/")[1]);
 
   const [role, setRole] = useState();
   const [accessList, setAccessList] = useState([]);
