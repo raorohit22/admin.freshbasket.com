@@ -97,7 +97,7 @@ const Currencies = () => {
                   </Button>
                 </div>
 
-                <div className="w-full md:w-32 lg:w-32 xl:w-32 mr-3 mb-3 lg:mb-0">
+                {/* <div className="w-full md:w-32 lg:w-32 xl:w-32 mr-3 mb-3 lg:mb-0">
                   <Button
                     disabled={isCheck.length < 1}
                     onClick={() => handleDeleteMany(isCheck)}
@@ -108,7 +108,7 @@ const Currencies = () => {
                     </span>
                     Delete
                   </Button>
-                </div>
+                </div> */}
                 <Button onClick={toggleDrawer} className="rounded-md h-12 w-48">
                   <span className="mr-2">
                     <FiPlus />

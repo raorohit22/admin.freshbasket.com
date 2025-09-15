@@ -62,7 +62,7 @@ const EditDeleteButton = ({
           </button>
         )}
 
-        <button
+        {/* <button
           disabled={isCheck?.length > 0}
           onClick={() => handleModalOpen(id, title, product)}
           className="p-2 cursor-pointer text-gray-400 hover:text-red-600 focus:outline-none"
@@ -73,7 +73,7 @@ const EditDeleteButton = ({
             title={t("Delete")}
             bgColor="#EF4444"
           />
-        </button>
+        </button> */}
       </div>
     </>
   );
