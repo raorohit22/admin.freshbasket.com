@@ -86,11 +86,11 @@ const sidebar = [
     icon: FiTarget,
     name: "OnlineStore",
     routes: [
-      {
-        name: "ViewStore",
-        path: "/store",
-        outside: "store",
-      },
+      // {
+      //   name: "ViewStore",
+      //   path: "/store",
+      //   outside: "store",
+      // },
 
       {
         path: "/store/customization",
@@ -103,22 +103,22 @@ const sidebar = [
     ],
   },
 
-  {
-    icon: FiSlack,
-    name: "Pages",
-    routes: [
-      // submenu
+  // {
+  //   icon: FiSlack,
+  //   name: "Pages",
+  //   routes: [
+  //     submenu
 
-      {
-        path: "/404",
-        name: "404",
-      },
-      {
-        path: "/coming-soon",
-        name: "Coming Soon",
-      },
-    ],
-  },
+  //     {
+  //       path: "/404",
+  //       name: "404",
+  //     },
+  //     {
+  //       path: "/coming-soon",
+  //       name: "Coming Soon",
+  //     },
+  //   ],
+  // },
 ];
 
 export default sidebar;

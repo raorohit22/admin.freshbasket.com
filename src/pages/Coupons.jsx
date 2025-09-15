@@ -120,7 +120,7 @@ const Coupons = () => {
                   </Button>
                 </div>
 
-                <div className="w-full md:w-32 lg:w-32 xl:w-32 mr-3 mb-3 lg:mb-0">
+                {/* <div className="w-full md:w-32 lg:w-32 xl:w-32 mr-3 mb-3 lg:mb-0">
                   <Button
                     disabled={isCheck.length < 1}
                     onClick={() => handleDeleteMany(isCheck)}
@@ -132,7 +132,7 @@ const Coupons = () => {
 
                     {t("Delete")}
                   </Button>
-                </div>
+                </div> */}
 
                 <div className="w-full md:w-48 lg:w-48 xl:w-48">
                   <Button

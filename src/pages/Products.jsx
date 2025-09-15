@@ -135,7 +135,7 @@ const Products = () => {
                     {t("BulkAction")}
                   </Button>
                 </div>
-                <div className="flex-grow-0 md:flex-grow lg:flex-grow xl:flex-grow">
+                {/* <div className="flex-grow-0 md:flex-grow lg:flex-grow xl:flex-grow">
                   <Button
                     disabled={isCheck?.length < 1}
                     onClick={() => handleDeleteMany(isCheck, data.products)}
@@ -147,7 +147,7 @@ const Products = () => {
 
                     {t("Delete")}
                   </Button>
-                </div>
+                </div> */}
                 <div className="flex-grow-0 md:flex-grow lg:flex-grow xl:flex-grow">
                   <Button
                     onClick={toggleDrawer}

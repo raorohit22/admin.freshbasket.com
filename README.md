@@ -185,9 +185,7 @@
 - **Multi-language Support**: i18n integration with multiple languages
 - **Supported Languages**:
   - English (en)
-  - Bengali (bn)
   - German (de)
-  - Hindi (hi)
 - **Language Features**:
   - Dynamic language switching
   - RTL language support
@@ -662,37 +660,6 @@ module.exports = {
 	plugins: [],
 };
 ```
-
-### **Vite Configuration**
-
-```javascript
-// vite.config.js
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { VitePWA } from "vite-plugin-pwa";
-
-export default defineConfig({
-	plugins: [
-		react(),
-		VitePWA({
-			registerType: "autoUpdate",
-			workbox: {
-				globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
-			},
-		}),
-	],
-	server: {
-		port: 4100,
-		host: true,
-	},
-	build: {
-		outDir: "dist",
-		sourcemap: true,
-	},
-});
-```
-
----
 
 ## 📄 File Management
 

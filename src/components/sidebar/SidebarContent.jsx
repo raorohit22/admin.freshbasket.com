@@ -49,20 +49,20 @@ const SidebarContent = () => {
 		<div className="flex flex-col h-full">
 			{/* Logo Section */}
 			<div className="px-6 py-6 border-b border-gray-100 dark:border-gray-700">
-				<a className="flex items-center sidebar-item" href="/dashboard">
+				<a className="flex items-center" href="/dashboard">
 					{mode === "dark" ? (
 						<img
 							src={logoLight}
 							alt="freshbasket"
 							width="135"
-							className="transition-all duration-200 hover:opacity-80"
+							className="transition-all duration-200"
 						/>
 					) : (
 						<img
 							src={logoDark}
 							alt="freshbasket"
 							width="135"
-							className="transition-all duration-200 hover:opacity-80"
+							className="transition-all duration-200"
 						/>
 					)}
 				</a>

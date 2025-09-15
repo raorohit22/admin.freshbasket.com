@@ -67,8 +67,6 @@ const customerSchema = {
 };
 
 const useFilter = (data) => {
-	console.log("usefilter page2", data);
-
 	const ajv = new Ajv({ allErrors: true });
 
 	const [filter, setFilter] = useState("");
@@ -118,8 +116,6 @@ const useFilter = (data) => {
 	const { globalSetting } = useUtilsFunction();
 
 	const { handleDisableForDemo } = useDisableForDemo();
-
-	console.log("usefilter page2", userRef);
 
 	//service data filtering
 	const serviceData = useMemo(() => {
