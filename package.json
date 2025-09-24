@@ -89,11 +89,14 @@
     "dev": "vite --force --port 4100",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "npm run test:unit && npm run test:system",
+    "test:unit": "vitest run src/__tests__/unit/ --reporter=verbose",
+    "test:system": "vitest run src/__tests__/system/ --reporter=verbose"
   },
   "author": "FreshBasket",
   "license": "Regular",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.8.0",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.7.0",
@@ -111,15 +114,9 @@
     "vite-plugin-pwa": "^0.17.4",
     "vitest": "^0.32.4",
     "webpack-bundle-analyzer": "^4.9.0",
-    "workbox-window": "^7.0.0"
-  },
-  "release-it": {
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": false
-    }
+    "workbox-window": "^7.0.0",
+    "@playwright/test": "^1.40.0",
+    "puppeteer": "^21.5.2"
   },
   "eslintConfig": {
     "extends": "react-app"
