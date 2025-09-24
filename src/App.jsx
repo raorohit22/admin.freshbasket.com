@@ -11,7 +11,6 @@ import PrivateRoute from "@/components/login/PrivateRoute";
 import { NotificationProvider } from "@/context/NotificationContext";
 const Layout = lazy(() => import("@/layout/Layout"));
 const Login = lazy(() => import("@/pages/Login"));
-// const SignUp = lazy(() => import("@/pages/SignUp"));
 const ForgetPassword = lazy(() => import("@/pages/ForgotPassword"));
 // const ResetPassword = lazy(() => import("@/pages/ResetPassword"));
 
